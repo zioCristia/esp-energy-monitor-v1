@@ -66,4 +66,4 @@ The toGridEnergy and the toGridPower is used to interface with the new energy ma
 The lcd print the solar power as IN, home power as OUT, the hour in the top right and below the difference between IN-OUT, so the differencePower.
 
 # Pcb
-
+![alt text](/images/pcbLayout.png)
