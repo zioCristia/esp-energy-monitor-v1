@@ -30,7 +30,7 @@ The module is composed by:
 * 75ohm resistor, x2
 * 10uF capacitor, x3
 
-To have the best readings, the 75ohm resistor should be changed based on the max current you are going to mesure with the ct sensors, according to the following formula present in [openenergymomitor](https://learn.openenergymonitor.org/electricity-monitoring/ct-sensors/interface-with-arduino) page:
+To have the best readings, the 75ohm resistor should be changed based on the max current you are going to mesure with the ct sensors, according to the following formula present in [openenergymonitor](https://learn.openenergymonitor.org/electricity-monitoring/ct-sensors/interface-with-arduino) page:
 ```
 Burden Resistor (ohms) = (AREF * CT TURNS) / (2√2 * max primary current)
 ```
