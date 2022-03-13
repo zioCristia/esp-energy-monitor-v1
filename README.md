@@ -2,6 +2,8 @@
 Esp32 based module, 220V ac powered, energy monitor with two ct sensors for solar power and home power, and a LCD I2C display for visualization. Integrated with ESPhome in my domotic house based in Home Assistant.
 Any possibility of improvement is accepted.
 
+You can find a [video tutorial](https://www.youtube.com/watch?v=UY-CO4Zc2r0) (in italian) of this pcb on YouTube.
+
 ![alt text](/images/final-pcb.jpg)
 
 ## Table of contenets
