@@ -20,7 +20,7 @@ You could use this board also if you want to use just on ct-sensor and maybe add
 
 In the future I'm planning to add one other ct-sensor for conditioning power consuption and also to add an irrigation system for my garden as the current irrigation system controller is always inside the service panel.
 
-![alt text](/images/pcb-installed.jpg)
+![alt text](/images/pcb-installed.png)
 
 # Hardware
 The module is composed by:
