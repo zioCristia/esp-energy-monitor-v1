@@ -1,4 +1,4 @@
-# esp-energyMonitor
+# Esp energy monitor
 Esp32 based module, 220V ac powered, energy monitor with two ct sensors for solar power and home power, and a LCD I2C display for visualization. Integrated with ESPhome in my domotic house based in Home Assistant.
 Any possibility of improvement is accepted.
 
@@ -20,12 +20,14 @@ You could use this board also if you want to use just on ct-sensor and maybe add
 
 In the future I'm planning to add one other ct-sensor for conditioning power consuption and also to add an irrigation system for my garden as the current irrigation system controller is always inside the service panel.
 
+![alt text](/images/pcb-installed.jpg)
+
 # Hardware
 The module is composed by:
 * esp32
 * sct 013 030 30A/1V as ct sensor, x2
 * 16x2 lcd display with i2c interface
-* 2.5mm jack connector with 3 pin, x2
+* 3.5mm jack connector with 3 pin, x2
 * 10k ohm resistor, x4
 * 75ohm resistor, x2
 * 10uF capacitor, x3
@@ -42,7 +44,7 @@ I'm planning to make a version with the normal jack connector directly soldered 
 # Software
 The software used is EspHome in order to integrate the sensor with my HomeAssistant server but you may as well use another software to your liking.
 
-You can find an example of the code [here](https://github.com/zioCristia/esp-energyMonitor/blob/main/energy-monitor.yaml.example).
+You can find an example of the code I used [here](https://github.com/zioCristia/esp-energyMonitor/blob/main/energy-monitor.yaml.example) or check in the [openenergymonitor](https://learn.openenergymonitor.org/electricity-monitoring/ct-sensors/how-to-build-an-arduino-energy-monitor-measuring-current-only?redirected=true) site for others examples.
 
 The filter section is used to obtain the right value of current from the sensor. I've done it confronting the values read with a well know source (like a phone or an electric heater).
 Moreover I've added a part to read zero values when we are near zero due to some interference that never allows to have values equal to zero.
@@ -59,11 +61,13 @@ filters:
           else return 0;
 ```
 
-I've added a software sensor to have the results from the in power and the out power with which I do some automation in home assistant and allows me to maximize the usage of current produced by the solar cells.
+I've added a software sensor which gives me the difference between the in power and the out power with which I do some automation in home assistant and allows me to maximize the usage of current produced by the solar panels.
 
 The toGridEnergy and the toGridPower is used to interface with the new energy management feature in home assistant.
 
-The lcd print the solar power as IN, home power as OUT, the hour in the top right and below the difference between IN-OUT, so the differencePower.
+The lcd prints the solar power as IN, home power as OUT, the hour in the top right and below the difference between IN-OUT, so the differencePower.
 
 # Pcb
+The pcb layout is extreamily simple with enought space for all the parts. The components are all through hole and the female jack connector is with 3 pins. Anyone can make this pcb at home with just a soldering iron.
 ![alt text](/images/pcbLayout.png)
+In the future I will change the type of the jack connectors with the ones more available in the online store.
