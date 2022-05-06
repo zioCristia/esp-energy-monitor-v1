@@ -20,7 +20,7 @@ I have also add a 16x2 lcd so that to have an immediate output in my electrical 
 
 You could use this board also if you want to use just on ct-sensor and maybe add it later on. The total cost for a board with two ct sensors (included) is around 20/25€.
 
-In the future I'm planning to add one other ct-sensor for conditioning power consuption and also to add an irrigation system for my garden as the current irrigation system controller is always inside the service panel.
+In the future I'm planning to add one other ct-sensor for conditioning power consuption and also to add an irrigation system for my garden as the current irrigation system controller is near the service panel.
 
 ![alt text](/images/pcb-installed.png)
 
