@@ -1,5 +1,5 @@
 # Esp energy monitor
-Esp32 based module, 220V ac powered, energy monitor with two ct sensors for solar power and home power, and a LCD I2C display for visualization. Integrated with ESPhome in my domotic house based in Home Assistant.
+Esp32 based module, 220V ac powered, energy monitor with two ct sensors for solar power and home power, and an LCD I2C display for visualization. Integrated with ESPhome in my IoT house based in Home Assistant.
 Any possibility of improvement is accepted.
 
 You can find a [video tutorial](https://www.youtube.com/watch?v=UY-CO4Zc2r0) (in italian) of this pcb on YouTube.
@@ -13,19 +13,19 @@ You can find a [video tutorial](https://www.youtube.com/watch?v=UY-CO4Zc2r0) (in
 * [Pcb](#pcb)
 
 # General info
-This is an extreamily simple power monitor that I build for my house. It has two ct-sensors which controls the current of solar panels production and house consumption. These sensors are controlled by an esp32 board for the connectivity with wi-fi to home assistant thanks to Esphome software.
-The board is powered with a 220v ac directel so no external transformer is needed.
+This is an extremely simple power monitor that I built for my house. It has two ct-sensors which control the current of solar panels production and house consumption. These sensors are controlled by an esp32 board for the connectivity with wi-fi to home assistant thanks to Esphome software. 
+The board is powered with a 220v ac, so no external transformer is needed. 
 
-I have also add a 16x2 lcd so that to have an immediate output in my electrical service panel.
+I have also added a 16x2 lcd so that to have an immediate output in my electrical service panel.
 
 You could use this board also if you want to use just on ct-sensor and maybe add it later on. The total cost for a board with two ct sensors (included) is around 20/25€.
 
-In the future I'm planning to add one other ct-sensor for conditioning power consuption and also to add an irrigation system for my garden as the current irrigation system controller is near the service panel.
+In the future I'm planning to add one other ct-sensor for conditioning power consumption and to add an irrigation system for my garden as the current irrigation system controller is near the service panel.
 
 ![alt text](/images/pcb-installed.png)
 
 # Hardware
-The module is composed by:
+The module is composed of:
 * esp32
 * sct 013 030 30A/1V as ct sensor, x2
 * 16x2 lcd display with i2c interface
@@ -34,13 +34,13 @@ The module is composed by:
 * 75ohm resistor, x2
 * 10uF capacitor, x3
 
-To have the best readings, the 75ohm resistor should be changed based on the max current you are going to mesure with the ct sensors, according to the following formula present in [openenergymonitor](https://learn.openenergymonitor.org/electricity-monitoring/ct-sensors/interface-with-arduino) page:
+To have the best readings, the 75ohm resistor should be changed based on the max current you are going to measure with the ct sensors, according to the following formula present in [openenergymonitor](https://learn.openenergymonitor.org/electricity-monitoring/ct-sensors/interface-with-arduino) page:
 ```
 Burden Resistor (ohms) = (AREF * CT TURNS) / (2√2 * max primary current)
 ```
-I've used 75 ohm resistor as I'm not going to mesure currents higher than 26A.
+I've used 75 ohm resistor as I'm not going to measure currents higher than 26A.
 
-Of course if you'd want just one ct sensor you should use 2x 10k ohm resistors, 75ohm resitor and 10uF capacitor less from the components.
+Of course, if you'd want just one ct sensor you should use 2x 10k ohm resistors, 75ohm resistor and 10uF capacitor less from the components.
 I'm planning to make a version with the normal jack connector directly soldered in the pcb.
 
 # Software
@@ -70,6 +70,6 @@ The toGridEnergy and the toGridPower is used to interface with the new energy ma
 The lcd prints the solar power as IN, home power as OUT, the hour in the top right and below the difference between IN-OUT, so the differencePower.
 
 # Pcb
-The pcb layout is extreamily simple with enought space for all the parts. The components are all through hole and the female jack connector is with 3 pins. Anyone can make this pcb at home with just a soldering iron.
+The pcb layout is extremely simple with enough space for all the parts. The components are all through hole and the female jack connector is with 3 pins. Anyone can make this pcb at home with just a soldering iron. 
 ![alt text](/images/pcbLayout.png)
 In the future I will change the type of the jack connectors with the ones more available in the online store.
