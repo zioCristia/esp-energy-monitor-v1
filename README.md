@@ -6,7 +6,7 @@ You can find a [video tutorial](https://www.youtube.com/watch?v=UY-CO4Zc2r0) (in
 
 ![alt text](/images/final-pcb.jpg)
 
-## Table of contenets
+## Table of contents
 * [General info](#general-info)
 * [Hardware](#hardware)
 * [Software](#software)
