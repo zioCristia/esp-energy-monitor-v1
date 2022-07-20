@@ -1,5 +1,5 @@
-# Esp energy monitor
-### Soon will arrive the new and better version of this board
+# Esp energy monitor - Version 1
+### Soon will arrive the new and better [version](https://github.com/zioCristia/esp-energy-monitor-v1) of this board
 Esp32 based module, 220V ac powered, energy monitor with two ct sensors for solar power and home power, and an LCD I2C display for visualization. Integrated with ESPhome in my IoT house based in Home Assistant.
 Any possibility of improvement is accepted.
 
@@ -47,7 +47,7 @@ I'm planning to make a version with the normal jack connector directly soldered 
 # Software
 The software used is EspHome in order to integrate the sensor with my HomeAssistant server but you may as well use another software to your liking.
 
-You can find an example of the code I used [here](https://github.com/zioCristia/esp-energyMonitor/blob/main/energy-monitor.yaml.example) or check in the [openenergymonitor](https://learn.openenergymonitor.org/electricity-monitoring/ct-sensors/how-to-build-an-arduino-energy-monitor-measuring-current-only?redirected=true) site for others examples.
+You can find an example of the code I used [here](https://github.com/zioCristia/esp-energy-monitor-v1/blob/main/energy-monitor.yaml.example) or check in the [openenergymonitor](https://learn.openenergymonitor.org/electricity-monitoring/ct-sensors/how-to-build-an-arduino-energy-monitor-measuring-current-only?redirected=true) site for others examples.
 
 The filter section is used to obtain the right value of current from the sensor. I've done it confronting the values read with a well know source (like a phone or an electric heater).
 Moreover I've added a part to read zero values when we are near zero due to some interference that never allows to have values equal to zero.
