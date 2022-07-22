@@ -72,5 +72,7 @@ The lcd prints the solar power as IN, home power as OUT, the hour in the top rig
 
 # Pcb
 The pcb layout is extremely simple with enough space for all the parts. The components are all through hole and the female jack connector is with 3 pins. Anyone can make this pcb at home with just a soldering iron. 
+
 ![alt text](/images/pcbLayout.png)
+
 In the future I will change the type of the jack connectors with the ones more available in the online stores.
