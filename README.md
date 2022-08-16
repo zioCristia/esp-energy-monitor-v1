@@ -44,6 +44,8 @@ I've used 75 ohm resistor as I'm not going to measure currents higher than 26A.
 Of course, if you'd want just one ct sensor and you should use 2x 10k ohm resistors, 75ohm resistor and 10uF capacitor less from the components.
 I'm planning to make a version with the normal jack connector directly soldered in the pcb.
 
+You can find some links of the components in the following [link](https://docs.google.com/spreadsheets/d/1uGH7hN6ZSQ5MoKFjuWFCn1lEjyLJ1oxg2DWpdToigKc/edit?usp=sharing).
+
 # Software
 The software used is EspHome in order to integrate the sensor with my HomeAssistant server but you may as well use another software to your liking.
 
