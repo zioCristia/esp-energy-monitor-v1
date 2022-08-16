@@ -41,7 +41,7 @@ Burden Resistor (ohms) = (AREF * CT TURNS) / (2√2 * max primary current)
 ```
 I've used 75 ohm resistor as I'm not going to measure currents higher than 26A.
 
-Of course, if you'd want just one ct sensor you should use 2x 10k ohm resistors, 75ohm resistor and 10uF capacitor less from the components.
+Of course, if you'd want just one ct sensor and you should use 2x 10k ohm resistors, 75ohm resistor and 10uF capacitor less from the components.
 I'm planning to make a version with the normal jack connector directly soldered in the pcb.
 
 # Software
