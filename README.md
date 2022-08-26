@@ -7,6 +7,8 @@ You can find a [video tutorial](https://www.youtube.com/watch?v=UY-CO4Zc2r0) (in
 
 ![alt text](/images/final-pcb.jpg)
 
+### Disclaimer! The current pcb design is not the one you can see in the phote above but a new one with jack connectors that are more easily found in the online market. See the [pcb section](#pcb) for more info.
+
 ## Table of contents
 * [General info](#general-info)
 * [Hardware](#hardware)
