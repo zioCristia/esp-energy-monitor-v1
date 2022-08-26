@@ -14,6 +14,7 @@ You can find a [video tutorial](https://www.youtube.com/watch?v=UY-CO4Zc2r0) (in
 * [Hardware](#hardware)
 * [Software](#software)
 * [Pcb](#pcb)
+* [Contribution](#contribution)
 
 # General info
 This is an extremely simple power monitor that I built for my house. It has two ct-sensors which control the current of solar panels production and house consumption. These sensors are controlled by an esp32 board for the connectivity with wi-fi to home assistant thanks to Esphome software. 
@@ -81,3 +82,6 @@ You can find the whole eagle project in [this folder](https://github.com/zioCris
 
 ![alt text](/images/pcbSchema.png)
 ![alt text](/images/pcbLayout.png)
+
+# Contribution
+Feel free to report any bugs or feature requests.
