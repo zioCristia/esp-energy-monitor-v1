@@ -77,6 +77,7 @@ The lcd prints the solar power as IN, home power as OUT, the hour in the top rig
 
 # Pcb
 The pcb layout is extremely simple with enough space for all the parts. The components are all through hole and the female jack connector is with 5 pins. Anyone can make this pcb at home with just a soldering iron.
+As can be seen in the image below, the circuit board has been modified to make it easier to replicate. The jack connector used is more easily found in any store for a few euros. 
 
 You can find the whole eagle project in [this folder](https://github.com/zioCristia/esp-energy-monitor-v1/tree/main/pcb-energy_monitor_v1).
 
